@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIFF Command in Linux/Unix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DIFF Command in Linux/Unix</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Overview</h2>
+            <p>The <strong>diff</strong> command is used to compare the differences between two files line by line. It outputs the changes needed to make the files identical.</p>
+        </section>
+
+        <section class="details">
+            <h2>What Does DIFF Command Do?</h2>
+            <p>The <strong>diff</strong> command is used to:</p>
+            <ul>
+                <li>Identify differences between two files.</li>
+                <li>Create patch files to update one file to match another.</li>
+                <li>Compare directories for file differences.</li>
+            </ul>
+        </section>
+
+        <section class="implementations">
+            <h2>Common Use Cases</h2>
+            <ul>
+                <li>Review changes in configuration files.</li>
+                <li>Analyze differences between two versions of a file.</li>
+                <li>Create patches for software updates.</li>
+            </ul>
+        </section>
+
+        <section class="options">
+            <h2>Options of DIFF Command</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>diff file1 file2</td>
+                        <td>Compares two files and outputs the differences.</td>
+                    </tr>
+                    <tr>
+                        <td>diff -u file1 file2</td>
+                        <td>Displays differences in unified format.</td>
+                    </tr>
+                    <tr>
+                        <td>diff -r dir1 dir2</td>
+                        <td>Recursively compares directories.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="diff" class="command-section">
+            <h2>Example</h2>
+            <pre><code># Compare two files
+diff file1.txt file2.txt
+
+# Show differences in unified format
+diff -u file1.txt file2.txt
+
+# Compare directories
+diff -r /dir1 /dir2</code></pre>
+<h3>Example Output</h3>
+            <div class="example-output">
+                <img src="Images/diff.png" width="500" alt="Example output of the diff command" />
+                <p>The image above shows an example of the output from the 'diff' command, displaying processes sorted by CPU usage.</p>
+            </div>
+        </section>
+
+        <button onclick="window.location.href='home.html'">Back to Home</button>
+    </main>
+    <footer>
+        © 2025 | Linux Commands Showcase
+    </footer>
+</body>
+</html>

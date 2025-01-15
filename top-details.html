@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Command in Linux/Unix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Top Command in Linux/Unix</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Overview</h2>
+            <p>The <strong>top</strong> command displays all the running processes on your system, helping monitor usage and performance. It is widely used by system administrators to detect server load and ensure efficient resource utilization.</p>
+            <p><em>“top” stands for <strong>Table of Processes</strong>.</em></p>
+        </section>
+
+        <section class="details">
+            <h2>What Does Top Command Do?</h2>
+            <p>The <strong>top</strong> command generates an ordered list of active processes. The list updates periodically and can be customized extensively to suit your requirements.</p>
+            <p>It provides vital information about:</p>
+            <ul>
+                <li>Memory and CPU utilization</li>
+                <li>Processes and users consuming resources</li>
+                <li>Load averages and more</li>
+            </ul>
+        </section>
+
+        <section class="implementations">
+            <h2>Implementations</h2>
+            <p>Several implementations of the <strong>top</strong> command exist:</p>
+            <ul>
+                <li><strong>Unix Version:</strong> Created by William LeFebvre and later hosted on SourceForge.</li>
+                <li><strong>Linux Version:</strong> Part of the <em>procps-ng</em> tools, initially developed by Roger Binns.</li>
+                <li><strong>Windows Equivalent:</strong> Task Manager utility and tasklist command.</li>
+                <li><strong>Solaris Equivalent:</strong> prstat command.</li>
+                <li><strong>IBM AIX:</strong> Active processes listed via <em>topas</em> and <em>topas_nmon</em>.</li>
+            </ul>
+        </section>
+
+        <section class="options">
+            <h2>Options of Top Command</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-a</td>
+                        <td>Sorts processes by allocated memory.</td>
+                    </tr>
+                    <tr>
+                        <td>-b</td>
+                        <td>Starts top in batch mode for output redirection.</td>
+                    </tr>
+                    <tr>
+                        <td>-c</td>
+                        <td>Reverses the last remembered state of command line programs.</td>
+                    </tr>
+                    <tr>
+                        <td>-d</td>
+                        <td>Displays delay between screen updates.</td>
+                    </tr>
+                    <tr>
+                        <td>-h</td>
+                        <td>Shows usage and library version, then quits.</td>
+                    </tr>
+                    <tr>
+                        <td>-H</td>
+                        <td>Reverses the remembered thread state.</td>
+                    </tr>
+                    <tr>
+                        <td>-i</td>
+                        <td>Excludes idle processes from the list.</td>
+                    </tr>
+                    <tr>
+                        <td>-m</td>
+                        <td>Reports memory usage instead of virtual memory.</td>
+                    </tr>
+                    <tr>
+                        <td>-M</td>
+                        <td>Displays memory in floating point units.</td>
+                    </tr>
+                    <tr>
+                        <td>-n</td>
+                        <td>Limits the number of iterations before quitting.</td>
+                    </tr>
+                    <tr>
+                        <td>-p</td>
+                        <td>Monitors processes by specific PIDs.</td>
+                    </tr>
+                    <tr>
+                        <td>-s</td>
+                        <td>Runs securely without certain interactive commands.</td>
+                    </tr>
+                    <tr>
+                        <td>-S</td>
+                        <td>Displays cumulative CPU time.</td>
+                    </tr>
+                    <tr>
+                        <td>-U</td>
+                        <td>Filters processes by a specific user.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="top" class="command-section">
+            <h2>Example of Top Command</h2>
+            <p>Here's an example of using the <strong>top</strong> command in the terminal:</p>
+            <pre><code>$ top</code></pre>
+            <p>Running the command without any arguments displays a dynamic list of processes, including their resource usage (CPU, memory), and additional system performance metrics.</p>
+
+            <p>For more advanced usage, you can customize the display or change the sorting method. For example:</p>
+            <pre><code>$ top -o %CPU</code></pre>
+            <p>This command will sort processes by CPU usage, showing the most resource-intensive ones at the top.</p>
+
+            <p>If you want to quit the `top` command, you can simply press the <code>q</code> key to exit the view.</p>
+
+            <h3>Example Output</h3>
+            <div class="example-output">
+                <img src="Images/top.png" alt="Example output of the top command" />
+                <p>The image above shows an example of the output from the 'top' command, displaying processes sorted by CPU usage.</p>
+            </div>
+        </section>
+
+        <button onclick="window.location.href='home.html'">Back to Home</button>
+    </main>
+    <footer>
+        © 2025 | Linux Commands Showcase
+    </footer>
+</body>
+</html>

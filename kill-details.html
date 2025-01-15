@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kill Command in Linux/Unix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kill Command in Linux/Unix</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Overview</h2>
+            <p>The <strong>kill</strong> command in Linux/Unix is used to terminate processes manually. It sends a specific signal to a process, instructing it to perform an action, such as exiting or reloading configuration files.</p>
+            <p>It is a vital tool for system administrators to control misbehaving or resource-heavy processes effectively.</p>
+        </section>
+
+        <section class="details">
+            <h2>What Does Kill Command Do?</h2>
+            <p>The <strong>kill</strong> command communicates with processes via signals. By default, it sends the <code>SIGTERM</code> signal, politely asking a process to terminate. If the process doesn’t respond, the <code>SIGKILL</code> signal can be used to force termination.</p>
+            <p>Signals sent by the <strong>kill</strong> command include:</p>
+            <ul>
+                <li><code>SIGTERM (15)</code>: Requests the process to terminate gracefully.</li>
+                <li><code>SIGKILL (9)</code>: Forces the process to terminate immediately.</li>
+                <li><code>SIGHUP (1)</code>: Reloads the process configuration without stopping it.</li>
+            </ul>
+        </section>
+
+        <section class="implementations">
+            <h2>Common Use Cases</h2>
+            <ul>
+                <li>Terminate unresponsive applications or services.</li>
+                <li>Restart processes to apply new configurations.</li>
+                <li>Control processes consuming excessive resources.</li>
+            </ul>
+            <p>The <strong>kill</strong> command is often used alongside commands like <code>ps</code> or <code>top</code> to identify and manage processes by their Process ID (PID).</p>
+        </section>
+
+        <section class="options">
+            <h2>Options of Kill Command</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-l</td>
+                        <td>Lists all signal names.</td>
+                    </tr>
+                    <tr>
+                        <td>-s SIGNAL</td>
+                        <td>Specifies the signal to send (e.g., <code>kill -s SIGKILL PID</code>).</td>
+                    </tr>
+                    <tr>
+                        <td>-n SIGNAL</td>
+                        <td>Sends a signal by its numeric value.</td>
+                    </tr>
+                    <tr>
+                        <td>-L</td>
+                        <td>Displays signal names and their corresponding numbers.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="kill" class="command-section">
+            <h2>Example</h2>
+            <p>Here's an example of using the <strong>kill</strong> command:</p>
+            <pre><code># Find the process ID
+ps aux | grep apache
+
+# Kill the process
+kill -9 12345</code></pre>
+            <p>This example shows how to find and terminate a process using its PID.</p>
+            <h3>Example Output</h3>
+            <div class="example-output">
+                <img src="Images/kill.png" alt="Example output of the kill command" />
+                <p>The image above shows an example of the output from the 'kill' command, displaying processes sorted by CPU usage.</p>
+            </div>
+        </section>
+
+        <button onclick="window.location.href='home.html'">Back to Home</button>
+    </main>
+    <footer>
+        © 2025 | Linux Commands Showcase
+    </footer>
+</body>
+</html>

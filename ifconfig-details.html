@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ifconfig Command in Linux/Unix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ifconfig Command in Linux/Unix</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Overview</h2>
+            <p>The <strong>ifconfig</strong> command is used to configure and display network interface parameters in Linux/Unix. It allows you to view the network interfaces and assign IP addresses to them, making it an essential tool for network administration and troubleshooting.</p>
+        </section>
+
+        <section class="details">
+            <h2>What Does Ifconfig Command Do?</h2>
+            <p>The <strong>ifconfig</strong> command is used to:</p>
+            <ul>
+                <li>Display information about network interfaces (e.g., eth0, wlan0).</li>
+                <li>Assign IP addresses to interfaces.</li>
+                <li>Enable or disable network interfaces.</li>
+                <li>Configure the network interface settings.</li>
+            </ul>
+            <p>By running <code>ifconfig</code> without arguments, you will see the active network interfaces along with their settings such as IP address, netmask, and broadcast address.</p>
+        </section>
+
+        <section class="implementations">
+            <h2>Common Use Cases</h2>
+            <ul>
+                <li>View the current IP address of your machine.</li>
+                <li>Bring up or down a network interface.</li>
+                <li>Assign an IP address to a specific interface.</li>
+            </ul>
+        </section>
+
+        <section class="options">
+            <h2>Options of Ifconfig Command</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ifconfig</td>
+                        <td>Displays the current status of network interfaces.</td>
+                    </tr>
+                    <tr>
+                        <td>ifconfig eth0 up</td>
+                        <td>Brings the eth0 interface up (activates it).</td>
+                    </tr>
+                    <tr>
+                        <td>ifconfig eth0 down</td>
+                        <td>Brings the eth0 interface down (deactivates it).</td>
+                    </tr>
+                    <tr>
+                        <td>ifconfig eth0 192.168.1.100</td>
+                        <td>Assigns the IP address 192.168.1.100 to eth0.</td>
+                    </tr>
+                    <tr>
+                        <td>ifconfig eth0 netmask 255.255.255.0</td>
+                        <td>Sets the subnet mask for eth0.</td>
+                    </tr>
+                    <tr>
+                        <td>ifconfig eth0 broadcast 192.168.1.255</td>
+                        <td>Sets the broadcast address for eth0.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="ifconfig" class="command-section">
+            <h2>Example</h2>
+            <p>Here's an example of using the <strong>ifconfig</strong> command:</p>
+            <pre><code># Display network interfaces
+ifconfig
+
+# Bring up eth0
+ifconfig eth0 up
+
+# Assign IP address to eth0
+ifconfig eth0 192.168.1.100</code></pre>
+            <p>This example demonstrates how to check interface status, activate it, and assign an IP address to the interface.</p>
+            <h3>Example Output</h3>
+            <div class="example-output">
+                <img src="Images/ifconfig.png" width="500"  alt="Example output of the ifconfig command" />
+                <p>The image above shows an example of the output from the 'ifconfig' command, displaying processes sorted by CPU usage.</p>
+            </div>
+        </section>
+
+        <button onclick="window.location.href='home.html'">Back to Home</button>
+    </main>
+    <footer>
+        © 2025 | Linux Commands Showcase
+    </footer>
+</body>
+</html>

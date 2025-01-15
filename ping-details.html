@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Command in Linux/Unix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ping Command in Linux/Unix</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Overview</h2>
+            <p>The <strong>ping</strong> command is used to test the reachability of a host on a network. It sends ICMP echo request packets to the target host and waits for a response, helping diagnose network connectivity issues.</p>
+        </section>
+
+        <section class="details">
+            <h2>What Does Ping Command Do?</h2>
+            <p>The <strong>ping</strong> command is used to:</p>
+            <ul>
+                <li>Check if a host is reachable over the network.</li>
+                <li>Measure round-trip time for messages sent to the host.</li>
+                <li>Identify network latency and packet loss.</li>
+            </ul>
+            <p>By default, <code>ping</code> continues to send packets until interrupted, but you can specify the number of packets to send.</p>
+        </section>
+
+        <section class="implementations">
+            <h2>Common Use Cases</h2>
+            <ul>
+                <li>Verify the availability of a server or website.</li>
+                <li>Diagnose network issues like high latency or dropped packets.</li>
+                <li>Measure the time it takes for data to travel to a host and back.</li>
+            </ul>
+        </section>
+
+        <section class="options">
+            <h2>Options of Ping Command</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ping [hostname/IP]</td>
+                        <td>Sends packets to the specified host and displays results.</td>
+                    </tr>
+                    <tr>
+                        <td>ping -c [count] [hostname/IP]</td>
+                        <td>Specifies the number of packets to send.</td>
+                    </tr>
+                    <tr>
+                        <td>ping -i [interval] [hostname/IP]</td>
+                        <td>Sets the interval between packets in seconds.</td>
+                    </tr>
+                    <tr>
+                        <td>ping -w [timeout] [hostname/IP]</td>
+                        <td>Specifies the total time to wait before stopping.</td>
+                    </tr>
+                    <tr>
+                        <td>ping -s [size] [hostname/IP]</td>
+                        <td>Specifies the size of the packet to send.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="ping" class="command-section">
+            <h2>Example</h2>
+            <p>Here’s an example of using the <strong>ping</strong> command:</p>
+            <pre><code># Test connectivity to google.com
+ping google.com
+
+# Send 5 packets to 192.168.1.1
+ping -c 5 192.168.1.1
+
+# Set packet size to 128 bytes
+ping -s 128 example.com</code></pre>
+            <p>This example demonstrates how to test connectivity, limit the number of packets sent, and set a specific packet size.</p>
+            <h3>Example Output</h3>
+            <div class="example-output">
+                <img src="Images/ping.png" alt="Example output of the ping command" />
+                <p>The image above shows an example of the output from the 'ping' command, displaying processes sorted by CPU usage.</p>
+            </div>
+        </section>
+
+        <button onclick="window.location.href='home.html'">Back to Home</button>
+    </main>
+    <footer>
+        © 2025 | Linux Commands Showcase
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURL Command in Linux/Unix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CURL Command in Linux/Unix</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Overview</h2>
+            <p>The <strong>curl</strong> command is used to transfer data from or to a server using protocols like HTTP, HTTPS, FTP, and more. It is widely used for testing APIs and downloading files.</p>
+        </section>
+
+        <section class="details">
+            <h2>What Does CURL Command Do?</h2>
+            <p>The <strong>curl</strong> command is used to:</p>
+            <ul>
+                <li>Download or upload files from a URL.</li>
+                <li>Test REST APIs by sending HTTP requests.</li>
+                <li>Fetch headers or content of web pages.</li>
+            </ul>
+        </section>
+
+        <section class="implementations">
+            <h2>Common Use Cases</h2>
+            <ul>
+                <li>Download files from a remote server.</li>
+                <li>Interact with APIs using GET, POST, PUT, or DELETE methods.</li>
+                <li>Debug network connections by inspecting server responses.</li>
+            </ul>
+        </section>
+
+        <section class="options">
+            <h2>Options of CURL Command</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>curl [URL]</td>
+                        <td>Fetches the content of the specified URL.</td>
+                    </tr>
+                    <tr>
+                        <td>curl -O [URL]</td>
+                        <td>Downloads the file and saves it with its original name.</td>
+                    </tr>
+                    <tr>
+                        <td>curl -d [data] [URL]</td>
+                        <td>Sends data in a POST request to the server.</td>
+                    </tr>
+                    <tr>
+                        <td>curl -I [URL]</td>
+                        <td>Fetches only the headers of the specified URL.</td>
+                    </tr>
+                    <tr>
+                        <td>curl -u [user:password] [URL]</td>
+                        <td>Authenticates using a username and password.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="curl" class="command-section">
+            <h2>Example</h2>
+            <pre><code># Fetch the content of a webpage
+curl https://example.com
+
+# Download a file
+curl -O https://example.com/file.zip
+
+# Send a POST request with JSON data
+curl -X POST -H "Content-Type: application/json" -d '{"key":"value"}' https://api.example.com</code></pre>
+<h3>Example Output</h3>
+<div class="example-output">
+    <img src="Images/curl.png" alt="Example output of the curl command" />
+    <p>The image above shows an example of the output from the 'curl command, displaying processes sorted by CPU usage.</p>
+</div>
+
+        <button onclick="window.location.href='home.html'">Back to Home</button>
+    </main>
+    <footer>
+        © 2025 | Linux Commands Showcase
+    </footer>
+</body>
+</html>

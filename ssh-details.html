@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSH Command in Linux/Unix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SSH Command in Linux/Unix</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Overview</h2>
+            <p>The <strong>ssh</strong> command is used to securely access and manage remote systems using the Secure Shell (SSH) protocol. It provides encrypted communication between two systems over an insecure network.</p>
+        </section>
+
+        <section class="details">
+            <h2>What Does SSH Command Do?</h2>
+            <p>The <strong>ssh</strong> command is used to:</p>
+            <ul>
+                <li>Log in to remote systems securely.</li>
+                <li>Execute commands on remote servers.</li>
+                <li>Transfer files securely using SSH tunnels.</li>
+            </ul>
+        </section>
+
+        <section class="implementations">
+            <h2>Common Use Cases</h2>
+            <ul>
+                <li>Remote system administration.</li>
+                <li>Securely run scripts or commands on remote servers.</li>
+                <li>Set up encrypted tunnels for secure communication.</li>
+            </ul>
+        </section>
+
+        <section class="options">
+            <h2>Options of SSH Command</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ssh user@hostname</td>
+                        <td>Connects to the remote system as the specified user.</td>
+                    </tr>
+                    <tr>
+                        <td>ssh -p [port] user@hostname</td>
+                        <td>Connects to the remote system on a specified port.</td>
+                    </tr>
+                    <tr>
+                        <td>ssh -i [keyfile] user@hostname</td>
+                        <td>Uses a specific private key for authentication.</td>
+                    </tr>
+                    <tr>
+                        <td>ssh -X user@hostname</td>
+                        <td>Enables X11 forwarding for graphical applications.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="ssh" class="command-section">
+            <h2>Example</h2>
+            <pre><code># Connect to a remote server
+ssh user@192.168.1.1
+
+# Connect using a specific port
+ssh -p 2222 user@192.168.1.1
+
+# Connect using a private key
+ssh -i ~/.ssh/id_rsa user@hostname</code></pre>
+<h3>Example Output</h3>
+<div class="example-output">
+    <img src="Images/ssh.png" alt="Example output of the ssh command" />
+    <p>The image above shows an example of the output from the 'ssh' command, displaying processes sorted by CPU usage.</p>
+</div>
+        </section>
+
+        <button onclick="window.location.href='home.html'">Back to Home</button>
+    </main>
+    <footer>
+        © 2025 | Linux Commands Showcase
+    </footer>
+</body>
+</html>

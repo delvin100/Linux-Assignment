@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCP Command in Linux/Unix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SCP Command in Linux/Unix</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Overview</h2>
+            <p>The <strong>scp</strong> command securely transfers files between systems over the SSH protocol. It provides encrypted file transfers, ensuring data security during transmission.</p>
+        </section>
+
+        <section class="details">
+            <h2>What Does SCP Command Do?</h2>
+            <p>The <strong>scp</strong> command is used to:</p>
+            <ul>
+                <li>Copy files from a local system to a remote system.</li>
+                <li>Copy files from a remote system to a local system.</li>
+                <li>Copy files between two remote systems.</li>
+            </ul>
+        </section>
+
+        <section class="implementations">
+            <h2>Common Use Cases</h2>
+            <ul>
+                <li>Transfer configuration files to a remote server.</li>
+                <li>Download backup files from a remote server.</li>
+                <li>Copy files securely between remote systems.</li>
+            </ul>
+        </section>
+
+        <section class="options">
+            <h2>Options of SCP Command</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>scp [source] [destination]</td>
+                        <td>Copies files from source to destination.</td>
+                    </tr>
+                    <tr>
+                        <td>scp -r [source] [destination]</td>
+                        <td>Recursively copies directories.</td>
+                    </tr>
+                    <tr>
+                        <td>scp -P [port] [source] [destination]</td>
+                        <td>Specifies the port for the SSH connection.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="scp" class="command-section">
+            <h2>Example</h2>
+            <pre><code># Copy a file to a remote system
+scp file.txt user@192.168.1.1:/home/user/
+
+# Copy a file from a remote system
+scp user@192.168.1.1:/home/user/file.txt ./file.txt
+
+# Copy a directory recursively
+scp -r /local/dir user@192.168.1.1:/remote/dir</code></pre>
+<h3>Example Output</h3>
+<div class="example-output">
+    <img src="Images/scp.png" alt="Example output of the scp command" />
+    <p>The image above shows an example of the output from the 'scp' command, displaying processes sorted by CPU usage.</p>
+        </section>
+
+        <button onclick="window.location.href='home.html'">Back to Home</button>
+    </main>
+    <footer>
+        © 2025 | Linux Commands Showcase
+    </footer>
+</body>
+</html>

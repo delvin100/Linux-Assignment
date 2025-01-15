@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands: Network and Connectivity</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #2c3e50, #1abc9c);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 0;
+    z-index: 1000;
+        }
+        @keyframes gradientFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            font-weight: bold;
+        }
+        main {
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .card {
+            background-color: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            color: #1abc9c;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+        .card p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            background: linear-gradient(90deg, #2c3e50, #1abc9c);
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .button:hover {
+            background: linear-gradient(90deg, #1abc9c, #2c3e50);
+            transform: translateY(-5px);
+            border: 2px solid #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .button:active {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .button:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        .footer-links a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            color: #fff;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #00bcd4;
+        }
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Linux Commands: Network and Connectivity</h1>
+    </header>
+    <main>
+        <p style="font-size: 1.5em; color: #444; font-weight: bold; margin-bottom: 20px;">Welcome to the ultimate guide for mastering Linux Network and Connectivity commands.</p>
+        
+        <div class="content-section">
+            <div class="card">
+                <h3>Process Management</h3>
+                <p>Process Management helps you monitor, control, and manage system processes using commands like 'top' and 'kill'.</p>
+            </div>
+            <div class="card">
+                <h3>Network Management</h3>
+                <p>Network Management involves configuring and monitoring network settings using commands like 'ifconfig' , 'ping' , 'ssh' , 'scp' and 'curl'.</p>
+            </div>
+            <div class="card">
+                <h3>File Handling</h3>
+                <p>File Handling allows you to manipulate and compare files using commands like 'diff', 'head' and 'tail'.</p>
+            </div>
+        </div>
+        
+        <a href="home.html" class="button">Get Started</a>
+    </main>
+    <footer id="contact">
+        <p>&copy; 2025 Linux Commands: Network and Connectivity</p>
+        <div class="social-icons">
+            <a href="mailto:delvinvarghese2028@mca.ajce.in" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/delvin-varghese-1811342b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/delvin100" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
